@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="./scripts/index.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <main class="game-container">
@@ -14,8 +16,21 @@
         <div class="color-options">
             <!-- Color will dynamically appear here -->
         </div>
-
-        
+        <p data-testid="gameStatus" id="gameStatus" class="game-status"></p>
+        <div class="game-info">
+            <p>Score: <span data-testid="score" id="score">0</span></p>
+            <p>Lives: <span data-testid="lives" id="lives">3</span></p>
+            <p>Time: <span id="timer">30</span>s</p>
+        </div>
+        <div class="controls">
+            <button data-testid="newGameButton" id="newGameButton" class="control-btn">New Game</button>
+            <select name="difficulty" id="difficultySelect" class="control-btn">
+                <option value="easy">Easy</option>
+                <option value="easy">Medium</option>
+                <option value="easy">Hard</option>
+            </select>
+        </div>
     </main>
+
 </body>
 </html>
