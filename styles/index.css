@@ -1,0 +1,30 @@
+:root {
+    --primary-color: #4caf50;
+    --secondary-color: #45a049;
+    --background-color: #f0f0f0;
+    --text-color: #333;
+    --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --error-color: #ff4136;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+
+.game-container{
+    text-align: center;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    max-width: 600px;
+    width: 90%;
+}
