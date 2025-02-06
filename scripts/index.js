@@ -6,7 +6,7 @@ const CONFIG = {
     hard: { time: 20 },
   },
   maxLives: 3,
-  colorOptions: 6, // All stages will have 6 color options
+  colorOptions: 6, 
 }
 
 // Game state

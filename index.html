@@ -6,12 +6,13 @@
     <title>Document</title>
     <script src="./scripts/index.js"></script>
     <link rel="stylesheet" href="./styles/index.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div id="game-container" class="game-container">
         <div id="loading-screen" class="screen">
-            <h1>Super Color Guess</h1>
+            <h1>Colorphilia Guess</h1>
             <p>Test your color skills!</p>
             <div id="loading-bar-container">
                 <div id="loading-bar"></div>
@@ -21,13 +22,14 @@
         <div id="game-screen" class="screen hidden">
             <h1>Guess the Color</h1>
             <p id="game-instructions" data-testid="gameInstructions">Match the color below:</p>
-            <div id="color-box" data-testid="colorBox" class="color-box"></div>
-            <div id="color-options" class="color-options"></div>
+            <div id="color-box" data-testid="colorBox"
+            class="color-box"></div>
+            <div id="color-options" data-testid="colorOption" class="color-options"></div>
             <p id="game-status" data-testid="gameStatus" class="game-status"></p>
             <div class="game-info">
                 <p>Score: <span id="score" data-testid="score">0</span></p>
-                <p>High Score: <span id="high-score" data-testid="highScore">0</span></p>
-                <p>Lives: <span id="lives" data-testid="lives">3</span></p>
+                <p>High Score: <span id="high-score" >0</span></p>
+                <p>Lives: <span id="lives">3</span></p>
                 <p>Time: <span id="timer">30</span>s</p>
             </div>
             <div class="controls">
@@ -37,7 +39,7 @@
                     <option value="medium">Medium</option>
                     <option value="hard">Hard</option>
                 </select>
-                <button id="toggle-theme-btn" class="btn">Toggle Theme</button>
+                <button id="toggle-theme-btn" class="btn">Change Theme</button>
             </div>
         </div>
     </div>

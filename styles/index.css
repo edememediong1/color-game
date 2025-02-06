@@ -3,8 +3,8 @@
 :root {
     --primary-color: #0a84ff;
     --secondary-color: #64d2ff;
-    --background-start: #1c1c1e;
-    --background-end: #2c2c2e;
+    --background-start:rgb(1, 1, 27);
+    --background-end:rgb(4, 4, 78);
     --text-color: #ffffff;
   --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
