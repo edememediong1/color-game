@@ -28,3 +28,134 @@ body {
     max-width: 600px;
     width: 90%;
 }
+
+
+h1 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.color-box {
+    width: 200px;
+    height: 200px;
+    margin: 1rem auto;
+    border: 2px solid var(--text-color);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.color-options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 1rem 0;
+}
+
+.color-option {
+    width: 80px;
+    height: 80px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition:  transform 0.2s, box-shadow 0.2s;
+}
+
+.color-option:hover {
+    transform: scale(1.1);
+    box-shadow: var(--box-shadow)
+}
+
+.game-status {
+    font-weight: bold;
+    min-height: 1.5em;
+    margin: 1rem 0;
+}
+
+.game-info {
+    display: flex;
+    justify-content: space-around;
+    margin: 1rem 0;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.control-btn {
+    background-color: var(--primary-color);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.control-btn:hover {
+    background-color: var(--secondary-color);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-5px);
+    }
+    50% {
+        transform: translateX(5px)
+    }
+    75% {
+        transform: translateX(-5px);
+    }
+    100% {
+        transform: translateX(0)
+    }
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease-in;
+}
+
+.shake {
+    animation: shake 0.5s ease-in-0ut;  
+}
+
+.error {
+    color: var(--error-color);
+    font-weight: bold;
+    margin: 1rem 0;
+}
+
+@media (max-width: 600px) {
+    .color-box {
+        width: 150px;
+        height: 150px;
+    }
+
+    .color-option{
+        width: 60px;
+        height: 60px;
+    }
+
+    .game-info {
+        flex-direction: column;
+    }
+}
